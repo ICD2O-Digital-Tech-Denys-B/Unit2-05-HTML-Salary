@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <title>WageCalc</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css"
   </head>
   <body>
-    <p>Paragraph</p>
+    <h1>Wage Calculator</h1>
+    <p>Enter hourly rate</p>
+    <input id="rate" type="number" value="" placeholder="Hourly rate">
+    <p>Enter hours worked</p>
+    <input id="hours" type="number" value="" placeholder="Hours worked">
+    <button onclick="calcWage()">Enter</button>
+    <p id="answerNoTax"></p>
+    <p id="answerTax"></p>
+    <p id="answerPostTax"></p>
   </body>
 </html>
